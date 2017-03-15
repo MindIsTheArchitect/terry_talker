@@ -14,7 +14,7 @@ clear
 
 [[ -d $BARTLIB_DATADIR ]] || mkdata $INFILE
 
-NUM_OF_SENTENCES=$(shuf -i4-15 -n1)
+NUM_OF_SENTENCES=$(shuf -i4-12 -n1)
 
 START=0
 END=$NUM_OF_SENTENCES
