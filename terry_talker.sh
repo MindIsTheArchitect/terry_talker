@@ -2,7 +2,7 @@
 
 INFILE=raw-data.txt
 BARTLIB_DATADIR=bart-data
-MKDATADIR="mkdir '$BARTLIB_DATADIR'"
+MKDATADIR="mkdir -p '$BARTLIB_DATADIR'"
 eval $MKDATADIR
 
 source terry_says.sh
