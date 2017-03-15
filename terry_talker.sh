@@ -2,6 +2,8 @@
 
 INFILE=raw-data.txt
 BARTLIB_DATADIR=bart-data
+MKDATADIR="mkdir '$BARTLIB_DATADIR'"
+eval $MKDATADIR
 
 source terry_says.sh
 source bartlib.sh
@@ -12,7 +14,7 @@ clear
 
 [[ -d $BARTLIB_DATADIR ]] || mkdata $INFILE
 
-NUM_OF_SENTENCES=$(shuf -i2-5 -n1)
+NUM_OF_SENTENCES=$(shuf -i4-15 -n1)
 
 START=0
 END=$NUM_OF_SENTENCES
